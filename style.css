@@ -1,0 +1,20 @@
+body{
+    text-align: center;
+}
+
+header{
+    padding: 2%;
+    background-color: burlywood;
+    color: cadetblue;
+}
+
+h1{
+    text-align: center;
+}
+
+input{
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    margin-top: 10px;
+}
