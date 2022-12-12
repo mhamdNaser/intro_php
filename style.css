@@ -18,3 +18,8 @@ input{
     padding: 10px;
     margin-top: 10px;
 }
+
+link{
+    width: 100%;
+    padding: 20px !important;
+}

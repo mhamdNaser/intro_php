@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+    margin: 2% ;
+}
+
+table{
+    width: 40%;
+    margin: 2% auto;
+}
+
+td{
+    padding: 3%;
+    border: 2px solid black;
+}
