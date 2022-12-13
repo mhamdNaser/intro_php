@@ -1,18 +1,15 @@
 <?php
+
+    echo ('<link rel="stylesheet" href="style.css">');
+    include ('header.php');
+    echo('<br><br>');
+
     // see session in sun_11 page ^_^
     session_start();
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style1.css">
-    <title>Document</title>
-</head>
-<body>
-<?php
+
+    echo('<main>');
+    echo ('<a href="./session.php">SESSION PAGE</a>');
+    echo('<br><br>');
 
     $name1 = "muhammed";
     $mail = "mhamd.naser.edden@gmail.com";
@@ -36,7 +33,7 @@
     echo ('number of file line :  ');
     $_SESSION['line']= $lines;
     echo $lines;
-
+    echo('</main>');
     ?>
     
 </body>

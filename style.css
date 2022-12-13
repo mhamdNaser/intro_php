@@ -1,15 +1,37 @@
-body{
-    text-align: center;
+*{
+    box-sizing: border-box;
 }
 
 header{
-    padding: 2%;
+    padding: 10px;
     background-color: burlywood;
     color: cadetblue;
 }
 
+main{
+    margin: 0 auto;
+    width: 80%;
+}
+
 h1{
+    padding: 2%;
     text-align: center;
+}
+
+a{
+    width: 100%;
+    color: white;
+    background-color: burlywood;
+    text-decoration: none;
+    padding: 10px !important;
+}
+
+a:hover{color: cadetblue;}
+
+
+pre{
+    width: 100%;
+    text-align: left !important;
 }
 
 input{
@@ -19,7 +41,12 @@ input{
     margin-top: 10px;
 }
 
-link{
-    width: 100%;
-    padding: 20px !important;
+table{
+    width: 40%;
+    margin: 2% auto;
+}
+
+td{
+    padding: 3%;
+    border: 2px solid black;
 }

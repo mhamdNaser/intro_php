@@ -1,9 +1,10 @@
 <?php
 
-    session_start();
-    echo  $_SESSION['name1'], "<br><br>" , $_SESSION['mail'] ,"<br><br>" , $_SESSION['information'],"<br><br>" , $_SESSION['line'] ;
-    
-    
+    echo ('<link rel="stylesheet" href="style.css">');
+    include ('header.php');
+    echo('<br><br>');
+    echo('<main>');
+
     echo (int)10.5 +(int)10.5;
     echo('<br><br>');
 
@@ -39,6 +40,7 @@
 
     // task three
     echo ('hello world');
+    echo('</main>');
 
     // task tow
     phpversion();
