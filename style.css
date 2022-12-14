@@ -50,3 +50,10 @@ td{
     padding: 3%;
     border: 2px solid black;
 }
+
+.container-canvas{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 20%;
+}
