@@ -7,6 +7,7 @@
            <a href="./sun_11.php">SUN 11/12 </a>
            <a href="./mon_12.php">MON 12/12 </a>
            <a href="./tus_13.php">TUS 12/12 </a>
+           <a href="./gameloop.php">Game 13/12 </a>
         ');
     echo ('</header>');
     echo('<br><br>');
