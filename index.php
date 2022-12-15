@@ -14,11 +14,6 @@
         echo('<br><br>');
         ?>
 
-    <div class="container-canvas">
-        <video id="video" src=""></video>
-        <canvas id="myCanvas" width="600" height="200"></canvas>
-        <canvas id="myCanvas" width="600" height="200"></canvas>
-    </div>
-    <script src="script.js"></script>
+        
 </body>
 </html>
