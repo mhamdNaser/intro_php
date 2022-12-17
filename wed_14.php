@@ -140,4 +140,15 @@ echo('<main>');
 
 //----------------------------------------------------
 
+echo "<table>";
+for($i=1; $i<=6; $i++){
+    echo "<tr>";
+    for($j=1; $j<=5; $j++){
+        $multi = $i * $j;
+        echo "<td>".$multi."</td>";
+    }
+    echo "</tr>";
+}
+echo "</table>";
+
 echo('</main>');
