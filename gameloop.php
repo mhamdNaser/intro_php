@@ -1,5 +1,10 @@
 <?php
 
+    echo ('<link rel="stylesheet" href="style.css">');
+    include ('header.php');
+    echo('<br><br>');
+    echo('<main>');
+
     $n=5;
     for($i=1; $i<=$n; $i++)
     {
@@ -52,3 +57,4 @@
         echo '<br>';
     }
     
+    echo('</main>');
