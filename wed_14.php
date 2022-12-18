@@ -210,7 +210,59 @@ $b = 5;
         }
         echo "<br>";
     }
+    echo "<br>";
+    echo "<br>";
     
     //----------------------------------------------------
+
+
+    function isLeapYear($year) {
+    // If the year is evenly divisible by 4, it is a leap year
+    if ($year % 4 == 0) {
+        // If the year is evenly divisible by 100, it is not a leap year
+        // unless it is also evenly divisible by 400, in which case it is a leap year
+        if ($year % 100 == 0) {
+        return $year % 400 == 0;
+        }
+        return true;
+    }
+    return false;
+    }
+
+    // Test the function with some example years
+    $years = "2013";
+    if (isLeapYear($years)) {
+        echo "$years is a leap year";
+    } 
+    else {
+        echo "$years is not a leap year";
+    }
+
+    //------------------------------------------------------
+
+    function dump($data) {
+        echo "<pre>";
+        var_dump($data);
+        echo "</pre>";
+    }
+
+    $array = array(1, 2, 3);
+    dump($array);
+
+    echo "<br>";
+    echo "<br>";
+
+    //------------------------------------------------------
+
+    function greet($name, $callback) {
+        echo "Hello, $name!";
+        $callback();
+      }
+    
+      function sayGoodbye() {
+        echo "Goodbye!";
+      }
+    
+      greet("John", "sayGoodbye");
 
 echo('</main>');
