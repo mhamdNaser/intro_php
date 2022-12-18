@@ -4,7 +4,7 @@ include ('header.php');
 echo('<br><br>');
 echo('<main>');
 
-
+    echo("<h1>LOOP</h1>");
     for($i=1 ; $i<=10; $i++){
         if($i<10){
             echo $i  , "-";
@@ -215,54 +215,181 @@ $b = 5;
     
     //----------------------------------------------------
 
-
-    function isLeapYear($year) {
-    // If the year is evenly divisible by 4, it is a leap year
-    if ($year % 4 == 0) {
-        // If the year is evenly divisible by 100, it is not a leap year
-        // unless it is also evenly divisible by 400, in which case it is a leap year
-        if ($year % 100 == 0) {
-        return $year % 400 == 0;
+    echo("<h1>FUNCTION</h1>");
+    function is_prime($num) {
+        // 0 and 1 are not prime
+        if ($num < 2) {
+            return false;
         }
+    
+        // 2 is the only even prime number
+        if ($num == 2) {
+            return true;
+        }
+    
+        // all even numbers are not prime
+        if ($num % 2 == 0) {
+            return false;
+        }
+    
+        // check odd numbers for primality
+        for ($i = 3; $i <= sqrt($num); $i += 2) {
+            if ($num % $i == 0) {
+                return false;
+            }
+        }
+    
         return true;
     }
-    return false;
+    
+    // test the function
+    $num = 3;
+    if (is_prime($num)) {
+        echo "$num is a prime number";
+    } else {
+        echo "$num is not a prime number";
     }
+    echo "<br>";
+    echo "<br>";
+    
+    //----------------------------------------------------
 
-    // Test the function with some example years
-    $years = "2013";
-    if (isLeapYear($years)) {
-        echo "$years is a leap year";
-    } 
-    else {
-        echo "$years is not a leap year";
+    function reverseString($string) {
+        return strrev($string);
+      }
+
+    $string = "remove";
+    $reversedString = reverseString($string);
+    echo $reversedString; // Outputs "!dlroW ,olleH"
+    
+    echo "<br>";
+    echo "<br>";
+    
+    //----------------------------------------------------
+    $string = "remove";
+
+    // Check if all the characters in the string are lower case
+    if (ctype_lower($string)) {
+        echo "Your String is Ok.";
+    } else {
+        echo ".";
     }
-
-    //------------------------------------------------------
-
-    function dump($data) {
-        echo "<pre>";
-        var_dump($data);
-        echo "</pre>";
-    }
-
-    $array = array(1, 2, 3);
-    dump($array);
 
     echo "<br>";
     echo "<br>";
-
-    //------------------------------------------------------
-
-    function greet($name, $callback) {
-        echo "Hello, $name!";
-        $callback();
-      }
     
-      function sayGoodbye() {
-        echo "Goodbye!";
-      }
+    //----------------------------------------------------
+
+    $x = 10;
+    $y = 12;
+
+    function swap($a, $b) {
+        $temp = $a;
+        $a = $b;
+        $b = $temp;
+    }
+
+    swap($x, $y);
+
+    echo "x = ",$x;  
+    echo "y = ",$y;  
+
+    echo "<br>";
+    echo "<br>";
     
-      greet("John", "sayGoodbye");
+    //----------------------------------------------------
+
+    function isArmstrongNumber($num) {
+        // Get the number of digits in the number
+        $num_digits = strlen((string)$num);
+        
+        // Initialize a variable to store the sum of the digits raised to the power of the number of digits
+        $sum = 0;
+        
+        // Split the number into individual digits
+        $digits = str_split((string)$num);
+        
+        // Iterate over each digit and add to the sum
+        foreach ($digits as $digit) {
+          $sum += pow((int)$digit, $num_digits);
+        }
+        
+        // Return whether the sum is equal to the original number
+        return $sum == $num;
+      }
+
+      $x = 407;
+      if (isArmstrongNumber($x)) {
+        echo $x ," is Armstrong Number.";
+      } else {
+        echo $x ," is not Armstrong Number.";
+      }
+
+      echo "<br>";
+      echo "<br>";
+    
+    //----------------------------------------------------
+
+
+      function isPalindrome($string) {
+        // Remove all non-alphanumeric characters and convert to lowercase
+        $string = preg_replace('/[^A-Za-z0-9]/', '', strtolower($string));
+      
+        // Check if the string is a palindrome
+        if ($string == strrev($string)) {
+          return "Yes it is a palindrome";
+        } else {
+          return "No it is not a palindrome";
+        }
+      }
+      
+      // Example usage
+      $input = "Eva, can I see bees in a cave?";
+      echo isPalindrome($input); // Outputs "Yes it is a palindrome"
+      
+      echo "<br>";
+      echo "<br>";
+    
+    //----------------------------------------------------
+
+      function removeDuplicates($arr) {
+        return array_unique($arr);
+      }
+
+      $array1 = array(2,4,7,4,8,4);
+    $uniqueArray = removeDuplicates($array1);
+
+    echo("<pre>");
+    print_r($uniqueArray); 
+    echo("</pre>");
+
+    echo "<br>";
+    echo "<br>";
+  
+  //----------------------------------------------------
+
+    echo("<h1>LOGIC OPERATOR</h1>");
+    $year = 2013;
+
+    if ($year % 4 == 0) {
+        if ($year % 100 == 0) {
+            if ($year % 400 == 0) {
+                echo "$year is a leap year";
+            } else {
+                echo "$year is not a leap year";
+            }
+        } else {
+            echo "$year is a leap year";
+        }
+    } else {
+        echo "$year is not a leap year";
+    }
+    
+    
+    
+    
+    
+
+        
 
 echo('</main>');
