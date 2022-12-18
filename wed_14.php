@@ -384,7 +384,114 @@ $b = 5;
     } else {
         echo "$year is not a leap year";
     }
+
+    echo "<br>";
+    echo "<br>";
+  //----------------------------------------------------
+
+    $temperature = 27;
+
+    if ($temperature < 20) {
+        echo "It's wintertime!";
+    } else {
+        echo "It's summertime!";
+    }
+
+    echo "<br>";
+    echo "<br>";
+  //----------------------------------------------------
+
+    function calculateSum($firstInteger, $secondInteger) {
+    $sum = $firstInteger + $secondInteger;
+    if ($firstInteger == $secondInteger) {
+        $sum = $sum * 3;
+    }
+    return $sum;
+    }
+
+    $firstInteger = 2;
+    $secondInteger = 2;
+
+    $result = calculateSum($firstInteger, $secondInteger);
+
+    echo "($firstInteger + $secondInteger)";
+    if ($firstInteger == $secondInteger) {
+    echo " * 3";
+    }
+    echo " = $result";
+
+    echo "<br>";
+    echo "<br>";
+  //----------------------------------------------------
+
+
+    function checkSum($firstInteger, $secondInteger) {
+        if ($firstInteger + $secondInteger == 30) {
+            return $firstInteger + $secondInteger;
+          } else {
+            return false;
+          }
+      }
+      
+      $input = [
+        'firstInteger' => 10,
+        'secondInteger' => 10
+      ];
+      
+    echo checkSum($input['firstInteger'], $input['secondInteger']);
+
+    echo "<br>";
+    echo "<br>";
+  //----------------------------------------------------
+
+    $number = 20;
     
+    if ($number % 3 == 0) {
+        echo "true";
+    } else {
+        echo "false";
+    }
+
+    echo "<br>";
+    echo "<br>";
+  //----------------------------------------------------
+
+
+    $number = 50;
+
+    if ($number >= 20 && $number <= 50) {
+        
+        echo 'true';
+    } else {
+        
+        echo 'false';
+    }
+
+
+    echo "<br>";
+    echo "<br>";
+  //----------------------------------------------------
+
+    $numbers = [1, 5, 9];
+
+    $largest = $numbers[0];
+
+    for ($i = 1; $i < count($numbers); $i++) {
+        if ($numbers[$i] > $largest) {
+            $largest = $numbers[$i];
+        }
+    }
+
+    echo $largest;
+
+
+
+  
+  
+
+
+
+        
     
     
     
