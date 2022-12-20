@@ -40,10 +40,5 @@
 
     // task three
     echo ('hello world');
-    echo('</main>');
 
-    // task tow
-    phpversion();
-    
-    // task one
-    phpinfo();
+    echo('</main>');

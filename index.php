@@ -12,6 +12,13 @@
 
         include ('header.php');
         echo('<br><br>');
+
+
+        // task tow
+        phpversion();
+        
+        // task one
+        phpinfo();
         ?>
 
         
